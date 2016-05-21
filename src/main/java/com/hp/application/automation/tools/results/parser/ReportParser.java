@@ -11,9 +11,9 @@ public interface ReportParser {
 	String REPORT_FORMAT_JENKINS_JUNIT_PLUGIN = "Jenkins JUnit Plugin";
 	String REPORT_FORMAT_ANT = "Ant";
 	String REPORT_FORMAT_MAVEN_SUREFIRE_PLUGIN = "Maven Surefire Plugin";
-	String EXTERNAL_TEST_SET_TYPE_ID = "hp.qc.test-set.external";
-	String EXTERNAL_TEST_INSTANCE_TYPE_ID = "hp.qc.test-instance.external-test";
-	String EXTERNAL_RUN_TYPE_ID = "hp.qc.run.external-test";
+	String EXTERNAL_TEST_SET_TYPE_ID = "hp.qc.test-set.default";
+	String EXTERNAL_TEST_INSTANCE_TYPE_ID = "hp.qc.test-instance.default-test";
+	String EXTERNAL_RUN_TYPE_ID = "hp.qc.run.default-test";
 	
 	List<AlmTestSet> parseTestSets(InputStream reportInputStream, String testingFramework, String testingTool) throws ReportParseException;
 }
